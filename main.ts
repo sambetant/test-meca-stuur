@@ -8,6 +8,7 @@ basic.forever(function () {
             . # # # .
             . . . . .
             `)
+        radio.sendNumber(0)
     }
     if (input.acceleration(Dimension.X) < -200) {
         basic.showLeds(`
@@ -17,6 +18,7 @@ basic.forever(function () {
             . # . . .
             . . # . .
             `)
+        radio.sendNumber(1)
     }
     if (input.acceleration(Dimension.X) > 200) {
         basic.showLeds(`
@@ -26,6 +28,7 @@ basic.forever(function () {
             . . . # .
             . . # . .
             `)
+        radio.sendNumber(2)
     }
     if (input.acceleration(Dimension.Y) > 200) {
         basic.showLeds(`
@@ -35,6 +38,7 @@ basic.forever(function () {
             . # # # .
             . . # . .
             `)
+        radio.sendNumber(3)
     }
     if (input.acceleration(Dimension.Y) < -200) {
         basic.showLeds(`
@@ -44,5 +48,6 @@ basic.forever(function () {
             . . # . .
             . . # . .
             `)
+        radio.sendNumber(4)
     }
 })
